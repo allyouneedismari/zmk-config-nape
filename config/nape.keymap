@@ -148,7 +148,7 @@
 
         orientation225_layer {
             bindings = <
-&lt_mkp 10 MB3  &mkp MB2  &mkp MB1  &mo 8  &mo 9  &mo 11
+&lt_mkp 10 MB3  &lt_mkp 12 MB2  &mkp MB1  &mo 8  &mo 9  &mo 11
             >;
         };
 
@@ -205,6 +205,12 @@
 &to 2  &to 4  &to 6  &to 0  &to 5  &trans
             >;
         };
+
+        layer_12 {
+            bindings = <
+&kp LC(RIGHT)  &trans  &kp LC(LEFT_ARROW)  &trans  &trans  &trans
+            >;
+        };
     };
 };
 
@@ -215,7 +221,7 @@
         // Key1、2同時押しでスクロールレイヤーへ
 
         combo_layer9 {
-            bindings = <&mo 10>;
+            bindings = <&kp LC(UP_ARROW)>;
             key-positions = <1 2>;
             timeout-ms = <50>;
         };
