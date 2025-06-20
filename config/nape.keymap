@@ -188,7 +188,7 @@
 
         scroll_layer {
             bindings = <
-&mkp MB3  &mkp MB4  &mkp MB5  &trans  &trans  &trans
+&kp F11  &mkp MB4  &mkp MB5  &trans  &trans  &trans
             >;
 
             // トラックボールの動きをスクロールに変換
@@ -215,9 +215,14 @@
         // Key1、2同時押しでスクロールレイヤーへ
 
         combo_layer9 {
-            bindings = <&mo 10>;
+            bindings = <&lt 10 LC(DOWN)>;
             key-positions = <1 2>;
             timeout-ms = <50>;
+        };
+
+        orientation {
+            bindings = <&lt 11 F11>;
+            key-positions = <1 0>;
         };
     };
 };
